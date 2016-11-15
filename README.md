@@ -3,6 +3,8 @@ Particle Dallas Temperature sensor library
 
 This library is a port of the Arduino Dallas Temperature Sensor library. Some includes have been fixed, but the library is otherwise untouched.
 
+Optimized for local Particle development by [Nathan Robinson](@nrobinson2000)
+
 _**Note:** This library depends on the OneWire library, so be sure to include it in your project too._
 
 Original repository by Miles Burton: [Arduino-Temperature-Control-Library](https://github.com/milesburton/Arduino-Temperature-Control-Library).
