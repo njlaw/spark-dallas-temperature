@@ -26,7 +26,7 @@ This library was forked from [SparkCoreDallasTemperature](https://github.com/tom
 
 
 ### Example code
->Prints the temperature in Celcius every 500 milliseconds.
+>Prints the temperature in Celsius every 500 milliseconds.
 
 ```cpp
 #include "Particle.h"
