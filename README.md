@@ -29,21 +29,26 @@ This library was forked from [SparkCoreDallasTemperature](https://github.com/tom
 **!! _Make sure to include the libraries !!_**
 
 ```cpp
+#include "Particle.h"
+#include "OneWire.h"
+#include "spark-dallas-temperature.h"
 
-// Init Dallas on pin digital pin 3
+
+// Init Dallas on pin digital pin D3
 DallasTemperature dallas(new OneWire(D3));
 
 void setup()
 {
-Serial.begin(9600);
-dallas.begin();
+  Serial.begin(9600);
+  dallas.begin();
 }
 	
-void loop(){
-dallas.requestTemperatures();
-float celsius = dallas.getTempCByIndex( 0 );
-Serial.print("Temperature: ");
-Serial.println(celsius) ;
+void loop()
+{
+  dallas.requestTemperatures();
+  float celsius = dallas.getTempCByIndex( 0 );
+  Serial.print("Temperature: ");
+  Serial.println(celsius) ;
 }
 	
 ```
