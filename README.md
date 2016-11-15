@@ -26,7 +26,7 @@ This library was forked from [SparkCoreDallasTemperature](https://github.com/tom
 
 
 ### Example code
-**!! _Make sure to include the libraries !!_**
+>Prints the temperature in Celcius every 500 milliseconds.
 
 ```cpp
 #include "Particle.h"
@@ -46,9 +46,10 @@ void setup()
 void loop()
 {
   dallas.requestTemperatures();
-  float celsius = dallas.getTempCByIndex( 0 );
-  Serial.print("Temperature: ");
-  Serial.println(celsius) ;
+  float celsius = dallas.getTempCByIndex(0);
+  Serial.print("Temperature = ");
+  Serial.println(celsius);
+  delay(500);
 }
 	
 ```
