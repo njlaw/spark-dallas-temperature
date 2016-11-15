@@ -60,7 +60,7 @@ This library can be easily downloaded using po-util's library manager:
 ```sh
 $ po lib get https://github.com/nrobinson2000/spark-dallas-temperature
 ```
-You probably want to download `OneWire` as well:
+You'll probably want to download `OneWire` as well:
 ```sh
 $ po lib get https://github.com/spark/OneWireLibrary OneWire
 ```
