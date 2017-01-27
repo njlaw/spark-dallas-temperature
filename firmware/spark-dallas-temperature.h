@@ -20,7 +20,12 @@
 
 #include <inttypes.h>
 
-#include "OneWire.h"
+#if defined(ARDUINO) && ARDUINO >= 100
+     #include <OneWire.h>
+ #elif defined(SPARK) or defined(STM32F10X_MD)
+     #include "application.h"
+     #include "../OneWire/OneWire.h"
+ #endif
 
 
 
