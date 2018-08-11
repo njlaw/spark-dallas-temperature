@@ -30,9 +30,7 @@ This library was forked from [SparkCoreDallasTemperature](https://github.com/tom
 
 ```cpp
 #include "Particle.h"
-#include "OneWire.h"
-#include "spark-dallas-temperature.h"
-
+#include "spark-dallas-temperature/spark-dallas-temperature.h"
 
 // Init Dallas on pin digital pin D3
 DallasTemperature dallas(new OneWire(D3));
