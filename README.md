@@ -45,8 +45,7 @@ void loop()
 {
   dallas.requestTemperatures();
   float celsius = dallas.getTempCByIndex(0);
-  Serial.print("Temperature = ");
-  Serial.println(celsius);
+  Serial.printlnf("Temperature = %1.3f *C", celsius);
   delay(500);
 }
 	
